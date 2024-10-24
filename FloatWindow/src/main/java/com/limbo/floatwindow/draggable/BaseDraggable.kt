@@ -50,7 +50,7 @@ abstract class BaseDraggable : View.OnTouchListener {
         }
 
         // 贴边逻辑：如果窗口接近屏幕边缘，自动贴边
-        val edgeThreshold = 30 // 你可以根据需要调整这个值
+        val edgeThreshold = 30 // 你可以根据需
         if (newX < edgeThreshold) {
             newX = 0 // 靠近左边缘时吸附到左边
         } else if (newX + viewWidth > screenWidth - edgeThreshold) {
